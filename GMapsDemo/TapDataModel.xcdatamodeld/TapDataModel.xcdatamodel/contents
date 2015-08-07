@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D2134" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Place" representedClassName="GMapsDemo.Place" syncable="YES">
+        <attribute name="googlePlaceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="upvotes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Upvote" inverseName="place" inverseEntity="Upvote" syncable="YES"/>
+    </entity>
+    <entity name="Upvote" representedClassName="GMapsDemo.Upvote" syncable="YES">
+        <attribute name="datetime" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="place" maxCount="1" deletionRule="Nullify" destinationEntity="Place" inverseName="upvotes" inverseEntity="Place" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Place" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Upvote" positionX="-54" positionY="18" width="128" height="75"/>
+    </elements>
+</model>
