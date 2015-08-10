@@ -11,6 +11,8 @@
 		442715091B7553700027233A /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442715081B7553700027233A /* MediaViewController.swift */; };
 		4427150C1B756AC70027233A /* ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4427150A1B756AC70027233A /* ipad.jpg */; };
 		4427150D1B756AC70027233A /* iphone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4427150B1B756AC70027233A /* iphone.jpg */; };
+		44C01E941B78A222008C4006 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C01E931B78A222008C4006 /* NavigationControllerDelegate.swift */; };
+		44C01E961B78A425008C4006 /* CircleTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C01E951B78A425008C4006 /* CircleTransitionAnimator.swift */; };
 		44CE650E1B59697600127338 /* CapitolHill.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 44CE650D1B59697600127338 /* CapitolHill.gpx */; };
 		44CE65101B59776800127338 /* MapStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE650F1B59776800127338 /* MapStory.swift */; };
 		44CE65121B5979FC00127338 /* MapStoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE65111B5979FC00127338 /* MapStoryService.swift */; };
@@ -47,6 +49,8 @@
 		442715081B7553700027233A /* MediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
 		4427150A1B756AC70027233A /* ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ipad.jpg; path = ../ipad.jpg; sourceTree = "<group>"; };
 		4427150B1B756AC70027233A /* iphone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = iphone.jpg; path = ../iphone.jpg; sourceTree = "<group>"; };
+		44C01E931B78A222008C4006 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		44C01E951B78A425008C4006 /* CircleTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleTransitionAnimator.swift; sourceTree = "<group>"; };
 		44CE650D1B59697600127338 /* CapitolHill.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CapitolHill.gpx; sourceTree = "<group>"; };
 		44CE650F1B59776800127338 /* MapStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapStory.swift; sourceTree = "<group>"; };
 		44CE65111B5979FC00127338 /* MapStoryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapStoryService.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				44CE651E1B62AD4A00127338 /* DataHelper.swift */,
 				44CE65221B62C72900127338 /* MapStoryManifest.swift */,
 				442715081B7553700027233A /* MediaViewController.swift */,
+				44C01E931B78A222008C4006 /* NavigationControllerDelegate.swift */,
+				44C01E951B78A425008C4006 /* CircleTransitionAnimator.swift */,
 			);
 			path = GMapsDemo;
 			sourceTree = "<group>";
@@ -336,8 +342,10 @@
 				44CE65101B59776800127338 /* MapStory.swift in Sources */,
 				44CE65211B62C0DF00127338 /* Upvote.swift in Sources */,
 				44CE65231B62C72900127338 /* MapStoryManifest.swift in Sources */,
+				44C01E961B78A425008C4006 /* CircleTransitionAnimator.swift in Sources */,
 				C066825B1AC7D5A10064A6C0 /* ViewController.swift in Sources */,
 				44CE651F1B62AD4A00127338 /* DataHelper.swift in Sources */,
+				44C01E941B78A222008C4006 /* NavigationControllerDelegate.swift in Sources */,
 				44CE651D1B628FE800127338 /* Place.swift in Sources */,
 				C06682591AC7D5A10064A6C0 /* AppDelegate.swift in Sources */,
 				44CE651B1B5E47F300127338 /* TapDataModel.xcdatamodeld in Sources */,
