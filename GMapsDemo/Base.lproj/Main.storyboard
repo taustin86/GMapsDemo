@@ -37,7 +37,7 @@
         <!--Media View Controller-->
         <scene sceneID="dW2-Hd-Yh6">
             <objects>
-                <viewController id="KcS-hR-7qM" customClass="MediaViewController" customModule="GMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MediaViewOdd" id="KcS-hR-7qM" customClass="MediaViewController" customModule="GMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RTI-5L-Tvq"/>
                         <viewControllerLayoutGuide type="bottom" id="fq7-Um-AnA"/>
@@ -94,7 +94,7 @@
         <!--Media View Controller-->
         <scene sceneID="fKC-N8-lBw">
             <objects>
-                <viewController id="Yvk-9o-vtc" customClass="MediaViewController" customModule="GMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MediaViewEven" id="Yvk-9o-vtc" customClass="MediaViewController" customModule="GMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ODe-rV-SMR"/>
                         <viewControllerLayoutGuide type="bottom" id="nYc-Pb-nDI"/>

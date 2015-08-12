@@ -85,6 +85,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         }
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "MapStorySegue") {
+            var navController = segue.destinationViewController as! UINavigationController
+            let images = ["ipad.jpg", "iphone.jpg", "macbook.jpg"]
+            navController.viewControllers = []
+            for (index, image) in enumerate(images) {
+                let viewId = (index % 2) == 0 ? "MediaViewEven" : "MediaViewOdd"
+                navController.viewControllers.append(self.storyboard?.instantiateViewControllerWithIdentifier(viewId) as! MediaViewController)
+            }
+        }
+    }
+    
     func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool {
         performSegueWithIdentifier("MapStorySegue", sender: nil)
         return true
