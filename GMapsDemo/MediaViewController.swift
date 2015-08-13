@@ -11,11 +11,16 @@ import UIKit
 class MediaViewController: UIViewController {
     
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var media: UIImageView!
+    
+    var mediaPath = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title:"Map", style:.Plain, target:self, action:Selector("backToMapTapped"))
         self.navigationItem.hidesBackButton = true
+        
+        self.media.image = UIImage(named: mediaPath)
         // Do any additional setup after loading the view.
     }
 

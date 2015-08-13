@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		23FB3EBBC22651C22D494D27 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C9E4A8A974984AFA904A77 /* libPods.a */; };
 		442715091B7553700027233A /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442715081B7553700027233A /* MediaViewController.swift */; };
-		4427150C1B756AC70027233A /* ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4427150A1B756AC70027233A /* ipad.jpg */; };
-		4427150D1B756AC70027233A /* iphone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4427150B1B756AC70027233A /* iphone.jpg */; };
 		44C01E941B78A222008C4006 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C01E931B78A222008C4006 /* NavigationControllerDelegate.swift */; };
 		44C01E961B78A425008C4006 /* CircleTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C01E951B78A425008C4006 /* CircleTransitionAnimator.swift */; };
-		44C01E981B79FB7B008C4006 /* macbook.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44C01E971B79FB7B008C4006 /* macbook.jpg */; };
+		44C01E9C1B7C1BA2008C4006 /* macbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 44C01E991B7C1BA2008C4006 /* macbook.png */; };
+		44C01E9D1B7C1BA2008C4006 /* ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 44C01E9A1B7C1BA2008C4006 /* ipad.png */; };
+		44C01E9E1B7C1BA2008C4006 /* iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 44C01E9B1B7C1BA2008C4006 /* iphone.png */; };
 		44CE650E1B59697600127338 /* CapitolHill.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 44CE650D1B59697600127338 /* CapitolHill.gpx */; };
 		44CE65101B59776800127338 /* MapStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE650F1B59776800127338 /* MapStory.swift */; };
 		44CE65121B5979FC00127338 /* MapStoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE65111B5979FC00127338 /* MapStoryService.swift */; };
@@ -48,11 +48,11 @@
 
 /* Begin PBXFileReference section */
 		442715081B7553700027233A /* MediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
-		4427150A1B756AC70027233A /* ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ipad.jpg; path = ../ipad.jpg; sourceTree = "<group>"; };
-		4427150B1B756AC70027233A /* iphone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = iphone.jpg; path = ../iphone.jpg; sourceTree = "<group>"; };
 		44C01E931B78A222008C4006 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
 		44C01E951B78A425008C4006 /* CircleTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleTransitionAnimator.swift; sourceTree = "<group>"; };
-		44C01E971B79FB7B008C4006 /* macbook.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = macbook.jpg; sourceTree = "<group>"; };
+		44C01E991B7C1BA2008C4006 /* macbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macbook.png; sourceTree = "<group>"; };
+		44C01E9A1B7C1BA2008C4006 /* ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipad.png; sourceTree = "<group>"; };
+		44C01E9B1B7C1BA2008C4006 /* iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone.png; sourceTree = "<group>"; };
 		44CE650D1B59697600127338 /* CapitolHill.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CapitolHill.gpx; sourceTree = "<group>"; };
 		44CE650F1B59776800127338 /* MapStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapStory.swift; sourceTree = "<group>"; };
 		44CE65111B5979FC00127338 /* MapStoryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapStoryService.swift; sourceTree = "<group>"; };
@@ -132,9 +132,9 @@
 		C06682551AC7D5A10064A6C0 /* GMapsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				44C01E971B79FB7B008C4006 /* macbook.jpg */,
-				4427150A1B756AC70027233A /* ipad.jpg */,
-				4427150B1B756AC70027233A /* iphone.jpg */,
+				44C01E991B7C1BA2008C4006 /* macbook.png */,
+				44C01E9A1B7C1BA2008C4006 /* ipad.png */,
+				44C01E9B1B7C1BA2008C4006 /* iphone.png */,
 				44D937881B62D4B100339B79 /* tap-green-small.png */,
 				44D937891B62D4B100339B79 /* tap-yellow-small.png */,
 				44D9378A1B62D4B100339B79 /* tap-red-small.png */,
@@ -278,19 +278,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4427150D1B756AC70027233A /* iphone.jpg in Resources */,
 				44CE65161B59803800127338 /* tap-green.png in Resources */,
 				44CE65181B59803800127338 /* tap-red.png in Resources */,
-				44C01E981B79FB7B008C4006 /* macbook.jpg in Resources */,
+				44C01E9E1B7C1BA2008C4006 /* iphone.png in Resources */,
 				C066825E1AC7D5A10064A6C0 /* Main.storyboard in Resources */,
 				44CE650E1B59697600127338 /* CapitolHill.gpx in Resources */,
 				44CE65171B59803800127338 /* tap-yellow.png in Resources */,
+				44C01E9D1B7C1BA2008C4006 /* ipad.png in Resources */,
 				44D9378D1B62D4B100339B79 /* tap-red-small.png in Resources */,
 				C06682631AC7D5A10064A6C0 /* LaunchScreen.xib in Resources */,
+				44C01E9C1B7C1BA2008C4006 /* macbook.png in Resources */,
 				C06682601AC7D5A10064A6C0 /* Images.xcassets in Resources */,
 				44D9378B1B62D4B100339B79 /* tap-green-small.png in Resources */,
 				44D9378C1B62D4B100339B79 /* tap-yellow-small.png in Resources */,
-				4427150C1B756AC70027233A /* ipad.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

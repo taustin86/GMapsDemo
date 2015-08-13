@@ -88,11 +88,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "MapStorySegue") {
             var navController = segue.destinationViewController as! UINavigationController
-            let images = ["ipad.jpg", "iphone.jpg", "macbook.jpg"]
+            let images = ["macbook", "ipad", "iphone"]
             navController.viewControllers = []
-            for (index, image) in enumerate(images) {
+            for (index, imageName) in enumerate(images) {
                 let viewId = (index % 2) == 0 ? "MediaViewEven" : "MediaViewOdd"
-                navController.viewControllers.append(self.storyboard?.instantiateViewControllerWithIdentifier(viewId) as! MediaViewController)
+                var mediaView = self.storyboard?.instantiateViewControllerWithIdentifier(viewId) as! MediaViewController
+                mediaView.mediaPath = imageName
+                navController.viewControllers.append(mediaView)
             }
         }
     }
