@@ -164,9 +164,11 @@
                     <connections>
                         <outlet property="delegate" destination="QOA-GB-uBI" id="12z-aU-YcM"/>
                         <segue destination="KcS-hR-7qM" kind="relationship" relationship="rootViewController" id="1Rm-lj-C54"/>
+                        <segue destination="h7U-eU-hDp" kind="unwind" identifier="unwindToMap" unwindAction="unwindToMap:" id="aeg-V1-DO7"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1WI-WZ-XYY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="h7U-eU-hDp" userLabel="Exit" sceneMemberID="exit"/>
                 <customObject id="QOA-GB-uBI" customClass="NavigationControllerDelegate" customModule="GMapsDemo" customModuleProvider="target">
                     <connections>
                         <outlet property="navigationController" destination="9sa-ic-oID" id="1Xp-vy-Ymm"/>

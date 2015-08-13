@@ -99,6 +99,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         }
     }
     
+    @IBAction func unwindToMap(segue: UIStoryboardSegue) {
+        println("Back to map!!!")
+    }
+    
     func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool {
         performSegueWithIdentifier("MapStorySegue", sender: nil)
         return true

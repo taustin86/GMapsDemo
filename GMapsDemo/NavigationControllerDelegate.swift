@@ -35,7 +35,7 @@ class NavigationControllerDelegate: NSObject, UINavigationControllerDelegate {
             if self.navigationController?.viewControllers.count > 1 {
                 self.navigationController?.popViewControllerAnimated(true)
             } else {
-                self.navigationController?.topViewController.performSegueWithIdentifier("PushSegue", sender: nil)
+                self.navigationController?.performSegueWithIdentifier("unwindToMap", sender: nil)
             }
             
             //2
