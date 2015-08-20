@@ -96,6 +96,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
                 mediaView.mediaPath = imageName
                 navController.viewControllers.append(mediaView)
             }
+            navController.viewControllers.append(self.storyboard?.instantiateViewControllerWithIdentifier("MediaViewVideo") as! MediaVideoViewController)
         }
     }
     

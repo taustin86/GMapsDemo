@@ -142,11 +142,66 @@
                     <connections>
                         <outlet property="button" destination="iQs-CL-klI" id="Mpm-QX-2J7"/>
                         <outlet property="media" destination="Pci-Wr-1PT" id="mBX-bh-AHe"/>
+                        <segue destination="cz2-h4-SnH" kind="show" identifier="PushSegueVideo" id="MYg-ch-Gbt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2d-Tw-slH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2428" y="366"/>
+            <point key="canvasLocation" x="2432" y="366"/>
+        </scene>
+        <!--Media Video View Controller-->
+        <scene sceneID="0Nk-eW-SUj">
+            <objects>
+                <viewController storyboardIdentifier="MediaViewVideo" id="cz2-h4-SnH" customClass="MediaVideoViewController" customModule="GMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7ri-6x-i14"/>
+                        <viewControllerLayoutGuide type="bottom" id="nOe-uF-ouD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j4k-3n-qRL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDE-Bn-r7b">
+                                <rect key="frame" x="530" y="74" width="44" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="4xV-h9-dCA"/>
+                                    <constraint firstAttribute="height" constant="44" id="HtH-69-SOA"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="6uF-TZ-nbA">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Pbf-uy-0DQ"/>
+                                    <constraint firstAttribute="height" constant="300" id="Tcx-n9-Prz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.080096266017632423" green="1" blue="0.06242867217180903" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="EDE-Bn-r7b" secondAttribute="trailing" constant="10" id="Acw-Hz-lcX"/>
+                            <constraint firstItem="EDE-Bn-r7b" firstAttribute="top" secondItem="7ri-6x-i14" secondAttribute="bottom" constant="10" id="UlD-uJ-ubt"/>
+                            <constraint firstAttribute="centerY" secondItem="6uF-TZ-nbA" secondAttribute="centerY" id="aYN-DH-82z"/>
+                            <constraint firstAttribute="centerX" secondItem="6uF-TZ-nbA" secondAttribute="centerX" id="xGo-dL-9jl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="EDE-Bn-r7b" id="1Mc-ys-qr7"/>
+                        <outlet property="subView" destination="6uF-TZ-nbA" id="lLd-W8-3RI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qBD-gK-K71" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3129" y="366"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gpM-1M-P4f">
