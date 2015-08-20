@@ -34,125 +34,10 @@
             </objects>
             <point key="canvasLocation" x="216" y="366"/>
         </scene>
-        <!--Media View Controller-->
-        <scene sceneID="dW2-Hd-Yh6">
-            <objects>
-                <viewController storyboardIdentifier="MediaViewOdd" id="KcS-hR-7qM" customClass="MediaViewController" customModule="GMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RTI-5L-Tvq"/>
-                        <viewControllerLayoutGuide type="bottom" id="fq7-Um-AnA"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fRx-Bf-8I3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Csm-TD-aQT">
-                                <rect key="frame" x="530" y="74" width="44" height="44"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="iU9-Gh-bIr"/>
-                                    <constraint firstAttribute="height" constant="44" id="pcw-x5-pZS"/>
-                                </constraints>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="22"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="circleTapped:" destination="KcS-hR-7qM" eventType="touchUpInside" id="OoQ-nH-z7K"/>
-                                    <segue destination="Yvk-9o-vtc" kind="show" identifier="PushSegue" id="Sjd-fE-qIF"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wco-ZP-KuR">
-                                <rect key="frame" x="150" y="150" width="300" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="Hm3-bP-znU"/>
-                                    <constraint firstAttribute="height" constant="300" id="gMa-04-KNz"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.21646898934684033" green="1" blue="0.1176382467282997" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="Wco-ZP-KuR" secondAttribute="centerY" id="73L-zW-Dda"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Csm-TD-aQT" secondAttribute="trailing" constant="10" id="Afq-pP-ici"/>
-                            <constraint firstAttribute="centerX" secondItem="Wco-ZP-KuR" secondAttribute="centerX" id="DzY-ZD-p4C"/>
-                            <constraint firstItem="Csm-TD-aQT" firstAttribute="top" secondItem="RTI-5L-Tvq" secondAttribute="bottom" constant="10" id="MU9-05-tsP"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="Val-NG-TOg"/>
-                    <connections>
-                        <outlet property="button" destination="Csm-TD-aQT" id="GvE-B0-tMC"/>
-                        <outlet property="media" destination="Wco-ZP-KuR" id="kvj-sc-MTI"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LKw-Ge-RsC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1752" y="366"/>
-        </scene>
-        <!--Media View Controller-->
-        <scene sceneID="fKC-N8-lBw">
-            <objects>
-                <viewController storyboardIdentifier="MediaViewEven" id="Yvk-9o-vtc" customClass="MediaViewController" customModule="GMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ODe-rV-SMR"/>
-                        <viewControllerLayoutGuide type="bottom" id="nYc-Pb-nDI"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Iv1-vY-XJi">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQs-CL-klI">
-                                <rect key="frame" x="530" y="74" width="44" height="44"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="ADk-tl-qbq"/>
-                                    <constraint firstAttribute="width" constant="44" id="RbY-bS-5Gf"/>
-                                </constraints>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="22"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="circleTapped:" destination="Yvk-9o-vtc" eventType="touchUpInside" id="I0v-WF-V6h"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pci-Wr-1PT">
-                                <rect key="frame" x="150" y="150" width="300" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="Ifa-dr-0iZ"/>
-                                    <constraint firstAttribute="width" constant="300" id="vnF-0g-RZr"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.98189724552177249" green="1" blue="0.23280608587929019" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="Pci-Wr-1PT" secondAttribute="centerY" id="725-th-Lin"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="iQs-CL-klI" secondAttribute="trailing" constant="10" id="Av8-Zp-1dk"/>
-                            <constraint firstItem="iQs-CL-klI" firstAttribute="top" secondItem="ODe-rV-SMR" secondAttribute="bottom" constant="10" id="Pyx-gw-dAF"/>
-                            <constraint firstAttribute="centerX" secondItem="Pci-Wr-1PT" secondAttribute="centerX" id="jpA-Ju-1cz"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="button" destination="iQs-CL-klI" id="Mpm-QX-2J7"/>
-                        <outlet property="media" destination="Pci-Wr-1PT" id="mBX-bh-AHe"/>
-                        <segue destination="cz2-h4-SnH" kind="show" identifier="PushSegueVideo" id="MYg-ch-Gbt"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A2d-Tw-slH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2432" y="366"/>
-        </scene>
-        <!--Media Video View Controller-->
+        <!--Map Story Media View Controller-->
         <scene sceneID="0Nk-eW-SUj">
             <objects>
-                <viewController storyboardIdentifier="MediaViewVideo" id="cz2-h4-SnH" customClass="MediaVideoViewController" customModule="GMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapStoryMediaVC" id="cz2-h4-SnH" customClass="MapStoryMediaViewController" customModule="GMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7ri-6x-i14"/>
                         <viewControllerLayoutGuide type="bottom" id="nOe-uF-ouD"/>
@@ -177,7 +62,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="6uF-TZ-nbA">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6uF-TZ-nbA">
                                 <rect key="frame" x="150" y="150" width="300" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -194,6 +79,7 @@
                             <constraint firstAttribute="centerX" secondItem="6uF-TZ-nbA" secondAttribute="centerX" id="xGo-dL-9jl"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="NTt-gU-YoY"/>
                     <connections>
                         <outlet property="button" destination="EDE-Bn-r7b" id="1Mc-ys-qr7"/>
                         <outlet property="subView" destination="6uF-TZ-nbA" id="lLd-W8-3RI"/>
@@ -201,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qBD-gK-K71" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3129" y="366"/>
+            <point key="canvasLocation" x="1663" y="366"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gpM-1M-P4f">
@@ -218,8 +104,8 @@
                     </toolbar>
                     <connections>
                         <outlet property="delegate" destination="QOA-GB-uBI" id="12z-aU-YcM"/>
-                        <segue destination="KcS-hR-7qM" kind="relationship" relationship="rootViewController" id="1Rm-lj-C54"/>
                         <segue destination="h7U-eU-hDp" kind="unwind" identifier="unwindToMap" unwindAction="unwindToMap:" id="aeg-V1-DO7"/>
+                        <segue destination="cz2-h4-SnH" kind="relationship" relationship="rootViewController" id="SPH-Lz-4hJ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1WI-WZ-XYY" userLabel="First Responder" sceneMemberID="firstResponder"/>

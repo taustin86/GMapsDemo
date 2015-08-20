@@ -88,20 +88,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "MapStorySegue") {
             var navController = segue.destinationViewController as! UINavigationController
-            let images = ["macbook", "ipad", "iphone"]
             navController.viewControllers = []
-            for (index, imageName) in enumerate(images) {
-                let viewId = (index % 2) == 0 ? "MediaViewEven" : "MediaViewOdd"
-                var mediaView = self.storyboard?.instantiateViewControllerWithIdentifier(viewId) as! MediaViewController
-                mediaView.mediaPath = imageName
+            let media_files = [["image", "macbook"], ["video", "sample_video"], ["image", "ipad"], ["image", "iphone"]]
+            for media in media_files {
+                var mediaView = self.storyboard?.instantiateViewControllerWithIdentifier("MapStoryMediaVC") as! MapStoryMediaViewController
+                mediaView.mediaUri = media[1]
+                if media[0] == "image" {
+                    mediaView.mediaType = MapStoryMediaViewController.image_type
+                }
+                if media[0] == "video" {
+                    mediaView.mediaType = MapStoryMediaViewController.video_type
+                }
                 navController.viewControllers.append(mediaView)
             }
-            navController.viewControllers.append(self.storyboard?.instantiateViewControllerWithIdentifier("MediaViewVideo") as! MediaVideoViewController)
         }
     }
     
     @IBAction func unwindToMap(segue: UIStoryboardSegue) {
-        println("Back to map!!!")
     }
     
     func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool {

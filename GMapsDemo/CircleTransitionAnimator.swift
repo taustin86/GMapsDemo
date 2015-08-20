@@ -22,8 +22,8 @@ class CircleTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning 
         
         //2
         var containerView = transitionContext.containerView()
-        var fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey) as! MediaViewController
-        var toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey) as! MediaViewController
+        var fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey) as! MapStoryMediaViewController
+        var toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey) as! MapStoryMediaViewController
         var button = fromViewController.button
         
         //3
