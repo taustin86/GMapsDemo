@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -62,20 +63,21 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6uF-TZ-nbA">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6uF-TZ-nbA">
                                 <rect key="frame" x="150" y="150" width="300" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="Pbf-uy-0DQ"/>
-                                    <constraint firstAttribute="height" constant="300" id="Tcx-n9-Prz"/>
+                                    <constraint firstAttribute="width" secondItem="6uF-TZ-nbA" secondAttribute="height" multiplier="1:1" id="5Wc-mE-nF0"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.080096266017632423" green="1" blue="0.06242867217180903" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="6uF-TZ-nbA" firstAttribute="leading" secondItem="j4k-3n-qRL" secondAttribute="leadingMargin" id="1fi-MC-aVm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EDE-Bn-r7b" secondAttribute="trailing" constant="10" id="Acw-Hz-lcX"/>
                             <constraint firstItem="EDE-Bn-r7b" firstAttribute="top" secondItem="7ri-6x-i14" secondAttribute="bottom" constant="10" id="UlD-uJ-ubt"/>
                             <constraint firstAttribute="centerY" secondItem="6uF-TZ-nbA" secondAttribute="centerY" id="aYN-DH-82z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6uF-TZ-nbA" secondAttribute="trailing" id="qQX-57-yd5"/>
                             <constraint firstAttribute="centerX" secondItem="6uF-TZ-nbA" secondAttribute="centerX" id="xGo-dL-9jl"/>
                         </constraints>
                     </view>
