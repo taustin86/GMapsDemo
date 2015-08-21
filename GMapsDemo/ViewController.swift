@@ -89,7 +89,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         if (segue.identifier == "MapStorySegue") {
             var navController = segue.destinationViewController as! UINavigationController
             navController.viewControllers = []
-            let media_files = [["image", "macbook"], ["video", "sample_video"], ["image", "ipad"], ["image", "iphone"]]
+            let media_files = [["image", "macbook"], ["video", "sample_video"], ["image", "ipad"], ["image", "iphone"], ["image", "osheaga-night"]]
             for (index, media) in enumerate(media_files) {
                 var mediaView = self.storyboard?.instantiateViewControllerWithIdentifier("MapStoryMediaVC") as! MapStoryMediaViewController
                 if (index % 2 == 0) {

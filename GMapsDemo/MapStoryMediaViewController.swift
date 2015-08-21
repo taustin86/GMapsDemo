@@ -34,8 +34,6 @@ class MapStoryMediaViewController: UIViewController {
             let url = NSURL.fileURLWithPath(path!)
             self.moviePlayer = MPMoviePlayerController(contentURL: url)
             if let player = self.moviePlayer {
-                player.view.frame = CGRect(x: 0, y: 0, width: subView.frame.size.width, height: subView.frame.size.height)
-                player.view.sizeToFit()
                 player.scalingMode = MPMovieScalingMode.Fill
                 player.fullscreen = true
                 player.controlStyle = MPMovieControlStyle.None
@@ -44,10 +42,18 @@ class MapStoryMediaViewController: UIViewController {
                 player.play()
                 subView.addSubview(player.view)
             }
+        }
+    }
+    
+    override func viewDidLayoutSubviews() {
+        if mediaType == MapStoryMediaViewController.video_type {
+                self.moviePlayer.view.frame = CGRect(x: 0, y: 0, width: subView.frame.width, height: subView.frame.height)
+                self.moviePlayer.view.sizeToFit()
         } else {
             let image = UIImage(named: mediaUri)
             let imageView = UIImageView(image: image)
-            imageView.frame = CGRect(x: 0, y: 0, width: subView.frame.size.width, height: subView.frame.size.height)
+            imageView.frame = CGRect(x: 0, y: 0, width: subView.bounds.width, height: subView.bounds.height)
+            
             subView.addSubview(imageView)
         }
     }
