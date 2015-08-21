@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="1663" y="366"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Map Story Media Navigation Controller-->
         <scene sceneID="gpM-1M-P4f">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9sa-ic-oID" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9sa-ic-oID" customClass="MapStoryMediaNavigationController" customModule="GMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rKv-B2-V8v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
