@@ -90,8 +90,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
             var navController = segue.destinationViewController as! UINavigationController
             navController.viewControllers = []
             let media_files = [["image", "macbook"], ["video", "sample_video"], ["image", "ipad"], ["image", "iphone"]]
-            for media in media_files {
+            for (index, media) in enumerate(media_files) {
                 var mediaView = self.storyboard?.instantiateViewControllerWithIdentifier("MapStoryMediaVC") as! MapStoryMediaViewController
+                if (index % 2 == 0) {
+                    mediaView.backgroundColor = UIColor(red: 0, green: 1, blue: 0, alpha: 1)
+                } else {
+                    mediaView.backgroundColor = UIColor(red: 1, green: 1, blue: 0, alpha: 1)
+                }
                 mediaView.mediaUri = media[1]
                 if media[0] == "image" {
                     mediaView.mediaType = MapStoryMediaViewController.image_type

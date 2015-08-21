@@ -18,6 +18,7 @@ class MapStoryMediaViewController: UIViewController {
     
     var mediaUri: String!
     var mediaType: String!
+    var backgroundColor: UIColor!
     var moviePlayer : MPMoviePlayerController!
     
     override func viewDidLoad() {
@@ -25,6 +26,8 @@ class MapStoryMediaViewController: UIViewController {
 
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title:"Map", style:.Plain, target:self, action:Selector("backToMapTapped"))
         self.navigationItem.hidesBackButton = true
+        
+        view.backgroundColor = backgroundColor
         
         if mediaType == MapStoryMediaViewController.video_type {
             let path = NSBundle.mainBundle().pathForResource(mediaUri, ofType:"mp4")
