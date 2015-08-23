@@ -32,15 +32,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         super.viewDidLoad()
         
         var mapStoryService = MapStoryService(context: self.managedObjectContext!)
-
-        viewMap.delegate = self
-        let camera: GMSCameraPosition = GMSCameraPosition.cameraWithLatitude(48.857165, longitude: 2.354613, zoom: 8.0)
-        viewMap.camera = camera
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         
         viewMap.addObserver(self, forKeyPath: "myLocation", options: NSKeyValueObservingOptions.New, context: nil)
+        viewMap.delegate = self
         
         var markers = [GMSMarker]()
         let mapStoryManifest = mapStoryService.getMapStories()
