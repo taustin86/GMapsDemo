@@ -24,7 +24,7 @@ class MapStoryMediaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title:"Map", style:.Plain, target:self, action:Selector("backToMapTapped"))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title:"Back to map", style:.Plain, target:self, action:Selector("backToMapTapped"))
         self.navigationItem.hidesBackButton = true
         
         view.backgroundColor = backgroundColor
