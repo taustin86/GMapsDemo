@@ -86,7 +86,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         if (segue.identifier == "MapStorySegue") {
             var navController = segue.destinationViewController as! UINavigationController
             navController.viewControllers = []
-            let media_files = [["image", "macbook"], ["video", "sample_video"], ["image", "ipad"], ["image", "iphone"], ["image", "osheaga-night"]]
+            let media_files = (sender as! GMSMarker).userData as! [[String]]
             for (index, media) in enumerate(media_files) {
                 var mediaView = self.storyboard?.instantiateViewControllerWithIdentifier("MapStoryMediaVC") as! MapStoryMediaViewController
                 if (index % 2 == 0) {
@@ -110,7 +110,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     }
     
     func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool {
-        performSegueWithIdentifier("MapStorySegue", sender: nil)
+        performSegueWithIdentifier("MapStorySegue", sender: marker)
         return true
     }
 
@@ -149,6 +149,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         marker.icon = self.imageFromView(view)
         marker.position = location
         marker.opacity = 0.6
+
+        marker.userData = [["image", "macbook"], ["video", "sample_video"], ["image", "ipad"], ["image", "iphone"], ["image", "osheaga-night"]]
         
         return marker
     }
